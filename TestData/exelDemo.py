@@ -1,14 +1,3 @@
-# print(sheet['B2'].value)
-
-# for i in range(1, sheet.max_row + 1):
-#     print(
-#         # sheet['A' + str(i)].value,
-#         sheet['B' + str(i)].value,
-#         sheet['C' + str(i)].value,
-#         sheet['D' + str(i)].value,
-#         sheet['E' + str(i)].value,
-#         sheet['F' + str(i)].value,
-#     )
 import openpyxl
 
 dict = {}
