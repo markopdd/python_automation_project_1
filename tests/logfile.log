@@ -33,3 +33,8 @@ Success! Thank you! Your order will be delivered in next few weeks :-).
 2021-01-27 16:03:15,890 : INFO : test_e2e : Entering country name
 2021-01-27 16:03:21,864 : INFO : test_e2e : Check Success status×
 Success! Thank you! Your order will be delivered in next few weeks :-).
+2021-01-27 21:18:30,948 : INFO : test_e2e : Get card items
+2021-01-27 21:18:31,811 : INFO : test_e2e : Make a checkout
+2021-01-27 21:18:33,995 : INFO : test_e2e : Entering country name
+2021-01-27 21:18:39,425 : INFO : test_e2e : Check Success status×
+Success! Thank you! Your order will be delivered in next few weeks :-).

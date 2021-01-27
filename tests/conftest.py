@@ -14,9 +14,9 @@ def setup(request):
     global driver
     browser_name = request.config.getoption("browser_name")
     if browser_name == "Chrome":
-        driver = webdriver.Chrome(executable_path="/Users/marko/Documents/chromedriver")
+        driver = webdriver.Chrome()
     elif browser_name == "Firefox":
-        driver = webdriver.Firefox(executable_path="/Users/marko/Documents/geckodriver")
+        driver = webdriver.Firefox()
 
     driver.get("https://rahulshettyacademy.com/angularpractice/")
     driver.maximize_window()
