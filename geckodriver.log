@@ -1,0 +1,11 @@
+1611565849139	geckodriver	INFO	Listening on 127.0.0.1:49553
+1611565850102	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/0h/94dx92597cgcmh5sy7vc6y0h0000gn/T/rust_mozprofileDug05n"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1611565865026	Marionette	INFO	Listening on port 49564
+1611565865321	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1611565882188	Marionette	INFO	Stopped listening on port 49564
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+

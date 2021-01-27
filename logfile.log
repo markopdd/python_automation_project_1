@@ -1,0 +1,5 @@
+2021-01-27 14:12:10,127 : INFO : test_e2e : Get card items
+2021-01-27 14:12:10,358 : INFO : test_e2e : Make a checkout
+2021-01-27 14:12:11,702 : INFO : test_e2e : Entering country name
+2021-01-27 14:12:17,566 : INFO : test_e2e : Check Success status×
+Success! Thank you! Your order will be delivered in next few weeks :-).
