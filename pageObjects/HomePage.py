@@ -13,8 +13,7 @@ class HomePage:
     employment = (By.XPATH, "//input[@id='inlineRadio2']")
     day_of_birth = (By.XPATH, "//input[@name='bday']")
     submit = (By.XPATH, "//input[@value='Submit']")
-    success_result =  (By.XPATH, "//div/strong['Success!']")
-
+    success_result = (By.XPATH, "//div/strong['Success!']")
 
     def __init__(self, driver):
         self.driver = driver

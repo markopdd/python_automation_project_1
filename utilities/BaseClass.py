@@ -10,7 +10,8 @@ from selenium.webdriver.support.select import Select
 @pytest.mark.usefixtures("setup")
 class BaseClass:
 
-    def get_logger(self):
+    @staticmethod
+    def get_logger():
         logger_name = inspect.stack()[1][3]
         logger = logging.getLogger(logger_name)
         filehandler = logging.FileHandler('logfile.log')

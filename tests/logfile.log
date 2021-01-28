@@ -1,0 +1,6 @@
+2021-01-28 12:02:49,156 : INFO : test_e2e : Get card items
+2021-01-28 12:02:49,394 : INFO : test_e2e : Make a checkout
+2021-01-28 12:02:49,822 : INFO : test_e2e : Entering country name
+2021-01-28 12:02:55,278 : INFO : test_e2e : Check Success status×
+Success! Thank you! Your order will be delivered in next few weeks :-).
+2021-01-28 12:04:12,421 : INFO : <module> : {'first_name': 'Hohoh', 'email': 'hoho@mail.com', 'password': '1245AqwdfrrF!', 'gender': 'Male', 'dofb': '10.11.1921'}
