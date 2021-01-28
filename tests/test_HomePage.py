@@ -8,19 +8,21 @@ from utilities.BaseClass import BaseClass
 class TestHomePage(BaseClass):
 
     def test_home_page(self, get_data):
+        log = self.get_logger()
         homepage = HomePage(self.driver)
         homepage.name_values().send_keys(get_data["first_name"])
         homepage.email_values().send_keys(get_data["email"])
         homepage.password_values().send_keys(get_data["password"])
         homepage.checkbox_mark().click()
-
+        log.info("Checkboxes done")
         self.select_option_by_text(homepage.get_gender(), get_data["gender"])
         homepage.employment_radiobutton().click()
         homepage.set_day_of_birth().send_keys(get_data["dofb"])
         homepage.get_submit().click()
         success_text = homepage.get_success_result().text
-
+        log.info("Check " + success_text)
         assert success_text == 'Success!'
+        log.info("Check complite!")
         self.driver.refresh()
 
     @pytest.fixture(params=HomePageData.get_test_data_from_excel("TestCase1"))

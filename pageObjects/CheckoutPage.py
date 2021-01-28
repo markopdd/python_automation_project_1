@@ -1,5 +1,4 @@
 from selenium.webdriver.common.by import By
-
 from pageObjects.ConfirmPage import ConfirmPage
 
 

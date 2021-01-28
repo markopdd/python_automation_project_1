@@ -10,14 +10,13 @@ from selenium.webdriver.support.select import Select
 @pytest.mark.usefixtures("setup")
 class BaseClass:
 
-    @staticmethod
-    def get_logger():
+    def get_logger(self):
         logger_name = inspect.stack()[1][3]
         logger = logging.getLogger(logger_name)
-        filehandler = logging.FileHandler('logfile.log')
+        file_handler = logging.FileHandler('logfile.log')
         formatter = logging.Formatter("%(asctime)s : %(levelname)s : %(name)s : %(message)s")
-        filehandler.setFormatter(formatter)
-        logger.addHandler(filehandler)  # file handler
+        file_handler.setFormatter(formatter)
+        logger.addHandler(file_handler)  # file handler
         logger.setLevel(logging.INFO)
 
         return logger

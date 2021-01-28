@@ -3,7 +3,8 @@ from utilities.BaseClass import BaseClass
 
 
 dict_data = {}
-log = BaseClass.get_logger()
+log_info = BaseClass()
+log = log_info.get_logger()
 
 book = openpyxl.load_workbook(filename="/Users/marko/Desktop/PythonTest/qa_automation_frwrk/TestData/PythonDemo.xlsx", data_only=True)
 sheet = book.active
@@ -14,4 +15,4 @@ for i in range(1, sheet.max_row + 1):
         for j in range(2, sheet.max_column + 1):
             dict_data[sheet.cell(row=1, column=j).value] = sheet.cell(row=i, column=j).value
 
-            log.info("Print dict data" + str(dict_data))
+log.info(dict_data)

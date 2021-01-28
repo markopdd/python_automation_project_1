@@ -1,8 +1,9 @@
 from selenium.webdriver.common.by import By
 from pageObjects.CheckoutPage import CheckoutPage
+from utilities.BaseClass import BaseClass
 
 
-class HomePage:
+class HomePage(BaseClass):
 
     shop = (By.XPATH, "//nav/ul/li[2]")
     name = (By.XPATH, "// input[ @ name = 'name']")
