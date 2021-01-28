@@ -16,7 +16,6 @@ class BaseClass:
         fileHandler = logging.FileHandler('logfile.log')
         formatter = logging.Formatter("%(asctime)s : %(levelname)s : %(name)s : %(message)s")
         fileHandler.setFormatter(formatter)
-
         logger.addHandler(fileHandler)  # file handler
         logger.setLevel(logging.INFO)
 
