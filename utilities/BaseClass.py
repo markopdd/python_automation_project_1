@@ -13,10 +13,10 @@ class BaseClass:
     def get_logger(self):
         logger_name = inspect.stack()[1][3]
         logger = logging.getLogger(logger_name)
-        fileHandler = logging.FileHandler('logfile.log')
+        filehandler = logging.FileHandler('logfile.log')
         formatter = logging.Formatter("%(asctime)s : %(levelname)s : %(name)s : %(message)s")
-        fileHandler.setFormatter(formatter)
-        logger.addHandler(fileHandler)  # file handler
+        filehandler.setFormatter(formatter)
+        logger.addHandler(filehandler)  # file handler
         logger.setLevel(logging.INFO)
 
         return logger
